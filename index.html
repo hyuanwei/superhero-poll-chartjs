@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Poll Results with Chart.js</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"
+      defer
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>Poll Results with Chart.js</h1>
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+    <form id="pollForm">
+      <div class="poll">
+        <div class="poll-heading">
+          <h3 class="poll-title">
+            Favorite characters of the Marvel Cinematic Universe
+          </h3>
+        </div>
+        <div class="poll-body">
+          <ul>
+            <li>
+              <label
+                ><input
+                  type="radio"
+                  name="pollOptions"
+                  value="Spider-Man"
+                /><span>Spider-Man</span></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="pollOptions" value="Falcon" /><span
+                  >Falcon</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  type="radio"
+                  name="pollOptions"
+                  value="Winter Soldier"
+                /><span>Winter Soldier</span></label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  type="radio"
+                  name="pollOptions"
+                  value="Captain Marvel"
+                /><span>Captain Marvel</span></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="pollOptions" value="Hulk" /><span
+                  >Hulk</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="pollOptions" value="Hawkeye" /><span
+                  >Hawkeye</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="pollOptions" value="Other" /><span
+                  >Other</span
+                ></label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="poll-footer">
+          <button type="submit">Vote</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
